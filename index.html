@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tabata Fernanda</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="#top"><img src="img/tflogo.png" alt="logo" class="logo"></a>
+        <div class="itemsMenu">
+            <label for="rdHome">Home</label>
+            <label for="rdSobre">Sobre</label>
+            <label for="rdHabilidades">Habilidades</label>
+            <label for="rdProjetos">Projetos</label>
+            <label for="rdContato">Contato</label>
+        </div>
+    </nav>
+
+    <div class="btnMsg">
+        <img src="img/chat.png" alt="" class="chat-icon">
+    </div>
+
+    <div id="olaAmigo">
+        <p class="txtFrase">Olá, amigo!</p>
+    </div>
+
+    <script>
+
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 100 * i)
+                
+            });
+        } 
+
+        const tit = document.querySelector('p'); 
+        typeWriter(tit)
+
+    </script>
+
+
+
+    <section id="dvSobre">
+        <img src="img/forma.png" id="forma" alt="">
+        <img src="img/fotoportfolio.png" class="fotoPerfil" alt="">
+        <div class="txtSobre">
+            <p id="txtSobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed lobortis, risus sed tincidunt tincidunt, ante est tincidunt metus, eu convallis mi leo ut
+                odio. Ut faucibus sapien metus, vulputate pretium tortor euismod.</p>
+        </div>
+    </section>
+
+    <section class="habilidades">
+        <div class="box">
+            <div class="percentualCirc">
+                <svg>
+                    <circle cx="100" cy="100" r="70"></circle>
+                </svg>
+                <svg>
+                    <circle cx="100" cy="100" r="70"></circle>
+                </svg>
+                <svg>
+                    <circle cx="100" cy="100" r="70"></circle>
+                </svg>
+            </div>
+            <div class="percentualRet">
+                <svg>
+                    <rect/>
+                </svg>
+                <svg>
+                    <rect/>
+                </svg>
+                <svg>
+                    <rect/>
+                </svg>
+                <svg>
+                    <rect/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos">
+
+    </section>
+
+    <section class="contato">
+
+        <div class="fundo-icones-contato">
+            <a href=""><img src="img/whatsapp.png" alt="Logo do Whatsapp"></a>
+            <a href="#"><img src="img/linkedin.png" alt="Logo do Linkedin"></a>
+            <a href="#"><img src="img/telegram.png" alt="Logo do Telegram"></a>
+            <a href="#"><img src="img/gmail.png" alt="Logo do Gmail"></a>
+        </div>
+
+        <form action="">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Nome" required>
+                </li>
+                <li>
+                    <input class="inpEmail" type="email" placeholder="Email" required>
+                    <input class="inpAssunto" type="text" placeholder="Assunto" required>
+                </li>
+
+                <li>
+                    <textarea class="cttMsg" placeholder="Mensagem" required></textarea>
+                </li>
+                <li>
+                    <button class="btnEnviar">Enviar</button>
+                </li>
+            </ul>
+        </form>
+        
+        <footer><h5>Copyright © 2020 Todos os diteitos reservados.</h5></footer>
+
+    </section>
+
+</body>
+
+</html>
