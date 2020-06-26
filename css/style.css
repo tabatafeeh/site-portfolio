@@ -5,6 +5,13 @@ body {
     background-image: linear-gradient(to bottom, #000 0%, #2b2a2a 100%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* referente ao menu */
+
 .menu {
     position: fixed;
     top: 0px;
@@ -44,6 +51,8 @@ body {
     margin-left: 20px;
 }
 
+/* primeira parte */
+
 #olaAmigo {
     height: 30vh;
     width: 100%;
@@ -63,6 +72,8 @@ p{
     color: white;
 }
 
+/* botao de chat */
+
 .btnMsg {
     width: 6%;
     height: 12.5%;
@@ -81,6 +92,8 @@ p{
     margin: 15px 17px auto;
 }
 
+/* olá amigo */
+
 .txtFrase {
     color: ivory;
     font-size: 90px;
@@ -88,6 +101,8 @@ p{
     text-align: center;
     margin-top: 18%;
 }
+
+/* sobre */
 
 #dvSobre {
     width: 100%;
@@ -117,6 +132,8 @@ p{
     margin-top: -30%;
 } 
 
+/* habilidades */
+
 .habilidades{
     height: 100vh;
     background-color: rgba(0, 0, 0, .2);
@@ -135,27 +152,75 @@ p{
     width: 100%;
     height: 100%;
     fill: none;
-    stroke: #752f92;
+    stroke: #2a1135;
     stroke-width: 10;
     stroke-linecap: round;
     transform: translate(5px,5px);
 }
 
+.percentualCirc svg{
+    stroke: #2a1135;
+    /* stroke-dasharray: 220; */
+    /* stroke-dashoffset: 220; */
+}
+
+.percentualCirc svg:nth-child(1) circle:nth-child(2){
+    stroke: #b300ff;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 10;
+}
+
+.percentualCirc svg:nth-child(2) circle:nth-child(2){
+    stroke: #00ff43;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 60; 
+}
+
+.percentualCirc svg:nth-child(3) circle:nth-child(2){
+    stroke: #752f92;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+}
+
+.percentualCirc svg:nth-child(3) circle:nth-child(1){
+    stroke: #2a1135;  
+}
+
+.percentualCirc svg:nth-child(3) circle:nth-child(1){
+    stroke: #2a1135;
+}
+
+.percentualCirc svg:nth-child(3) circle:nth-child(1){
+    stroke: #2a1135;
+}
+
+
+.percentualRet {
+    padding-top: 28%;
+}
+
 .percentualRet svg {
     position: relative;
     width: 570px;
-    height: 90px;
+    height: 60px;
+    border: 1px solid #5e5e5e;
     margin-left: 5%;
+    margin-top: 15px;
 }
 
 .percentualRet svg rect {
-    width: 100%;
-    height: 65px;
+    width: 70%;
+    height: 60px;
+    fill: #838383;
 }
+
+/* projetos */
 
 .projetos {
     height: 100vh;
 }
+
+/* contato */
 
 .contato {
     height: 105vh;
@@ -249,6 +314,8 @@ h5 {
     text-align: center;
     margin-left: 3%;
 }
+
+/* animações */
 
 @keyframes pisca {
     0% {
